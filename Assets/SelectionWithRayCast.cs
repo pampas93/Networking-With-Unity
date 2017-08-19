@@ -13,6 +13,7 @@ public class SelectionWithRayCast : MonoBehaviour {
             Debug.Log("Button clicked");
             RaycastHit hit;
 
+
             Ray r = Camera.main.ScreenPointToRay(Input.mousePosition);  // Construct a ray from the current mouse coordinates
             if (Physics.Raycast(r, out hit))
             {
